@@ -1,4 +1,3 @@
-# Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   # ==> Mailer Configuration
@@ -13,6 +12,7 @@ Devise.setup do |config|
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
   require 'devise/orm/active_record'
+config.secret_key = '0cefe30eba0c739f80492c5aef1d7cb68ea8b4efb876cb91a091a2ab54c0bb68ef9f842b2604ce653e87214582942a96f4b668eff4ec25c47cbe5bc7ac5e1d4e'# Use this hook to configure devise mailer, warden hooks and so forth.
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
